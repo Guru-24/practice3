@@ -27,4 +27,14 @@ for (i = 0; i < n; i++) {
         printf("Marks: ");
         scanf("%f", &students[i].marks);
     }
+ printf("\nStudent Records:\n");
+    printf("----------------------------------\n");
+    printf("Roll No\tName\t\tMarks\n");
+    printf("----------------------------------\n");
 
+    for (i = 0; i < n; i++) {
+        printf("%d\t%-15s%.2f\n", students[i].rollNo, students[i].name, students[i].marks);
+    }
+
+    return 0;
+}
